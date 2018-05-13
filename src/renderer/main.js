@@ -6,7 +6,7 @@ import router from './router'
 import store from './store'
 import webFrame from 'electron'
 
-webFrame.setVisualZoomLevelLimits(1,1)
+webFrame.setVisualZoomLevelLimits(1, 1)
 webFrame.setLayoutZoomLevelLimits(0, 0)
 
 Vue.config.productionTip = false

@@ -17,7 +17,7 @@ const winURL = process.env.NODE_ENV === 'development'
 
 // simple parameters initialization
 const electronConfig = {
-  URL_LAUNCHER_TOUCH: process.env.URL_LAUNCHER_TOUCH === '1' ? 1 : 0,
+  URL_LAUNCHER_TOUCH: process.env.URL_LAUNCHER_TOUCH === '0' ? 0 : 1,
   URL_LAUNCHER_TOUCH_SIMULATE: process.env.URL_LAUNCHER_TOUCH_SIMULATE === '1' ? 1 : 0,
   URL_LAUNCHER_FRAME: process.env.URL_LAUNCHER_FRAME === '1' ? 1 : 0,
   URL_LAUNCHER_KIOSK: process.env.URL_LAUNCHER_KIOSK === '1' ? 1 : 0,

@@ -23,7 +23,8 @@
     "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
     "start": "NODE_ENV=production ./node_modules/.bin/electron .",
     "test": "yarn run unit && yarn run e2e",
-    "unit": "karma start test/unit/karma.conf.js"
+    "unit": "karma start test/unit/karma.conf.js",
+    "postinstall": ""
   },
   "dependencies": {
     "axios": "^0.16.1",

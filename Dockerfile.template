@@ -35,6 +35,8 @@ RUN echo "#!/bin/bash" > /etc/X11/xinit/xserverrc \
 
 RUN npm install --unsafe-perm -g yarn
 
+RUN npm install -g eslint
+
 # Move to app dir
 WORKDIR /usr/src/app
 

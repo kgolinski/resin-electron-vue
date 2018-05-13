@@ -17,14 +17,13 @@
     "dev": "node .electron-vue/dev-runner.js",
     "e2e": "yarn run pack && mocha test/e2e",
     "lint": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter src test",
-    "lint:fix": "pwd && ls && eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter --fix src test",
+    "lint:fix": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter --fix src test",
     "pack": "yarn run pack:main && yarn run pack:renderer",
     "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
     "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
     "start": "NODE_ENV=production ./node_modules/.bin/electron .",
     "test": "yarn run unit && yarn run e2e",
-    "unit": "karma start test/unit/karma.conf.js",
-    "postinstall": "yarn run lint:fix"
+    "unit": "karma start test/unit/karma.conf.js"
   },
   "dependencies": {
     "axios": "^0.16.1",

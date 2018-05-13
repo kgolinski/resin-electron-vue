@@ -33,7 +33,8 @@
     "vue": "^2.3.3",
     "vue-electron": "^1.0.6",
     "vue-router": "^2.5.3",
-    "vuex": "^2.3.1"
+    "vuex": "^2.3.1",
+    "gsap": "^1.20.4"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
